@@ -1,5 +1,6 @@
 import kotlin.random.Random
 //In this we would demontrate the usage of the function and nullability condition and the use of the when condition
+// ***The when statement is similar to switch in other programming languages, but when automatically breaks at the end of each branch.
 fun feedfish()
 {
     val day=randomDay()
