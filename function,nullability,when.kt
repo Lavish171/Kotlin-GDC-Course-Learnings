@@ -23,6 +23,18 @@ fun fishfood(day:String):String
     }
     return food
 }
+fun fishfood(day:String):String //function with the else condition also written in when block (same as default in java)
+{
+    var food=""
+    when(day)
+    {
+        "Monday"->food="nuts"
+        "Wednesday"->food="onions"
+        "Thursady"->food="papaya"
+        else ->food="NOhting is being selected"
+    }
+    return food
+}
 fun main(args: Array<String>)
 {
     var fishes : Int ?=null
