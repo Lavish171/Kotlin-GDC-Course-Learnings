@@ -36,6 +36,18 @@ fun fishfood(day:String):String //function with the else condition also written 
     }
     return food
 }
+
+fun fishfood(day:String):String //function with the direct return statement ,with also the else block,acting 
+//just like the upper function
+{
+   return  when(day)
+    {
+        "Monday"->"nuts"
+        "Wednesday"->"onions"
+        "Thursady"->"papaya"
+        else ->"NOhting is being selected"
+    }
+}
 fun main(args: Array<String>)
 {
     var fishes : Int ?=null
