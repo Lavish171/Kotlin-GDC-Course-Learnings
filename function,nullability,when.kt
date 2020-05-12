@@ -48,6 +48,24 @@ fun fishfood(day:String):String //function with the direct return statement ,wit
         else ->"NOhting is being selected"
     }
 }
+
+//date 12 May 2020
+//function in kotlin witht the default parameter and also withotut it
+fun changewater(day:String,temp:Int=26,dirty:Int=35):Boolean
+{
+    return when
+    {
+        temp>30->true
+        dirty>40->true
+        day=="Sunday"->true
+        else ->false
+    }
+}
+
+fun swim(speed: String = "fast") {
+   println("swimming $speed")
+}
+
 fun main(args: Array<String>)
 {
     var fishes : Int ?=null
@@ -61,4 +79,10 @@ fun main(args: Array<String>)
      val randomday=randomDay()
     val food=fishfood(randomday)
     println("Today is $randomday & are we are eating food $food")
+    
+    var istrue:Boolean=changewater("Munday")
+    println(istrue)
+    swim()   // uses default speed
+    swim("slow")   // positional argument
+    swim(speed="turtle-like")   // named parameter
 }
