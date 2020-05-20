@@ -21,4 +21,12 @@ mutablearraylist.add(19)
      println(anytype["Raj"])
     hashmaping.set(6, "Lavish")
     println(hashmaping[4])
+    
+    /* taking around the for each loop*/
+     hashmaping.forEach { t, u ->
+        print("$t -> $u")
+        println()
+    }
+
+    mutablearraylist.forEach { print("$it  ")  }
 }
