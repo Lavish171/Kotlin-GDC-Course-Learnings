@@ -31,4 +31,8 @@ mutablearraylist.add(19)
    mutablearraylist.forEach { print("$it  ")  }
     println()
     listofnames.forEach { print("$it  ") }
+    
+     println("Traditional for loop")
+    for(x in 0..10) print("$x ")  // it will include the x from 0 to 10 ie on printing the values we get 
+    //the values from 0 to 10 inclusively
 }
