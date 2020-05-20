@@ -28,5 +28,7 @@ mutablearraylist.add(19)
         println()
     }
 
-    mutablearraylist.forEach { print("$it  ")  }
+   mutablearraylist.forEach { print("$it  ")  }
+    println()
+    listofnames.forEach { print("$it  ") }
 }
