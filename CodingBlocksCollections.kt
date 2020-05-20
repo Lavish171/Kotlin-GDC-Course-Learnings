@@ -4,12 +4,12 @@ var mutablelist= mutableListOf<String>("Lavish","rahul","deepak")
 var mutablearraylist= arrayListOf<Int>(2,3,5,6,12,14)
 var hashmap= mapOf<Int,String>(1 to "Rahul",2 to "Lavish",3 to "Raj",4 to "Hari")
 var anytype= mapOf(1 to "Simran","Raj" to "Hi","Hello" to "SHyam")
-var hashmaping= hashMapOf(2 to "Shyam",4 to "SUnny",7 to "honey")
+var hashmaping= hashMapOf(2 to "Shyam",4 to "SUnny",7 to "honey")//hashmap is mutable whereas the map is not mutable
 fun main()
 {
 println(listofnames.size)
- mutablelist.add("adding the new element")
-    println("The element in the index at 3 in the mutable list is being given by as ${mutablelist.get(3)}")
+mutablelist.add("adding the new element")
+println("The element in the index at 3 in the mutable list is being given by as ${mutablelist.get(3)}")
 mutablearraylist.add(19)
     for(i in mutablearraylist)
     {
