@@ -23,4 +23,9 @@ num="Lavish Garg"
     var newlen:Int?=checking?.length ?:0
     print("THe length using the elvish operator is $newlen")
     //ans would be 0  in this case
+   
+    //if you want to use any property ie you want to print the length of the propperties of any object or any var 
+    // then you can use it within the string by using the curly brackets {} ie ${variable.length} 
+    
+      print("The length of the num is ${num.length}")
 }
