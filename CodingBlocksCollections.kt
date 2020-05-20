@@ -35,4 +35,8 @@ mutablearraylist.add(19)
      println("Traditional for loop")
     for(x in 0..10) print("$x ")  // it will include the x from 0 to 10 ie on printing the values we get 
     //the values from 0 to 10 inclusively
+    
+    for(x in 0 until 10) print(" $x ") //This will exclude the 10,it would be printed from the 0 to 9
+    
+    for (x in 10 downTo 0 step 2) print("$x ")
 }
