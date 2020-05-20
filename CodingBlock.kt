@@ -28,4 +28,10 @@ num="Lavish Garg"
     // then you can use it within the string by using the curly brackets {} ie ${variable.length} 
     
       print("The length of the num is ${num.length}")
+    
+      //capitalize capitals the first letter of the string
+    println("After the capitalisation of the string we have ${num.capitalize()}  ")
+
+    print("After the new capitalization we have"+ num.capitalize() +" and length is "+num.length)
+
 }
