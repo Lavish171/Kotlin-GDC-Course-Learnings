@@ -39,7 +39,8 @@ class Student(var name:String)//defining the property within the class ie within
         println("The name is $name")
 
     }
-    constructor(name:String,id:Int):this(name)
+    constructor(name:String,id:Int):this(name) //IT IS COMPULSORY TO CALL THE PRIMARY CONSTRUCTOR ,IF WE ARE
+    //CALLING THE SECONDARY CONSTRUCTOR
     {
         this.id=id
         println("Within  the secondary constructor $id")
