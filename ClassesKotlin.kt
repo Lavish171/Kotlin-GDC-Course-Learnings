@@ -23,3 +23,27 @@ class Student(var name:String)//primary constructor with the property
 //but we can think the init block has the part of the body of the primary constructor.
 
 //✨✨👉👉THE BODY OF THE SECONDARY CONSTRUCTOR IS BEING CALLED AFTER THE INIT BLOCK.👈👈👈✨✨  //
+
+//FOR SECONDARY CONSTRUCTOR//
+✨✨👀👀👇👇👉
+fun main()
+{
+var student=Student("Lavish",13)
+    println(student.id)
+}
+
+class Student(var name:String)//defining the property within the class ie within the contructor
+{
+    var id:Int=-1;
+    init {
+        println("The name is $name")
+
+    }
+    constructor(name:String,id:Int):this(name)
+    {
+        this.id=id
+        println("Within  the secondary constructor $id")
+    }
+}
+
+//☝☝👀👀✨✨
