@@ -17,4 +17,9 @@ fun main()
     var three:Int=square3(6)
     print("First function $one \n Second Function $two \n Third Function $three")
     showmeuser("lavish",20,true)
+    showmeuser(age=21,con=true,name="lavish")  //special thing in the kotlin is the named parameter ie //👈👈
+    //in this we do not need remeber  or care about the positions of the arguements that we are passing
+  showmeuser("lavish",con=true,age=15) //mix and match also going to work //👈👈
+    
+    //☝☝☝ all the three version of  the function showmeuser are going to work in the same manner
 }
