@@ -3,7 +3,7 @@ fun main()
 var student=Student("Lavish")
 }
 
-/*class Student(name:String)  //1 way of defining the property
+/*class Student(name:String)  //1 way of defining the primary constructor with just parameters
 {
     var name="dummy"
     init {
@@ -11,7 +11,7 @@ var student=Student("Lavish")
         println("The name is ${this.name}")
     }
 }*/
-class Student(var name:String)//defining the property within the class ie within the contructor
+class Student(var name:String)//primary constructor with the property
 {
     init {
         name="Mukesh"
