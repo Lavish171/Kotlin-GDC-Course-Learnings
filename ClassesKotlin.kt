@@ -41,6 +41,7 @@ class Student(var name:String)//defining the property within the class ie within
     }
     constructor(name:String,id:Int):this(name) //IT IS COMPULSORY TO CALL THE PRIMARY CONSTRUCTOR ,IF WE ARE
     //CALLING THE SECONDARY CONSTRUCTOR
+    //SECONDARY CONSTRUCTOR CANNOT HAVE THE VAR ARGUEMENTS AS WE DID IN THE PRIMARY CONSTRUCTOR
     {
         this.id=id
         println("Within  the secondary constructor $id")
