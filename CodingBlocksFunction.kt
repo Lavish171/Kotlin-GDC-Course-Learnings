@@ -19,7 +19,12 @@ fun main()
     showmeuser("lavish",20,true)
     showmeuser(age=21,con=true,name="lavish")  //special thing in the kotlin is the named parameter ie //👈👈
     //in this we do not need remeber  or care about the positions of the arguements that we are passing
-  showmeuser("lavish",con=true,age=15) //mix and match also going to work //👈👈
+    showmeuser("lavish",con=true,age=15) //mix and match also going to work //👈👈
     
     //☝☝☝ all the three version of  the function showmeuser are going to work in the same manner
+    
+    showmeuser(con=true,age=17,"Pulkit") //this would not work as we cannnot use the positional argument , //👎⚔✂
+    //once we have used the named arg  
+    
+    
 }
