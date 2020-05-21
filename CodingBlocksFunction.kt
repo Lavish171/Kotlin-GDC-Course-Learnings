@@ -10,6 +10,16 @@ fun showmeuser(name:String,age:Int=18,con:Boolean=false)
     println("Name is $name and the age is $age and the con is $con")
 }
 
+fun variablearguements(vararg  num:Int) //VARARGS ,variable arguements
+{
+    println(num.size)
+    for (i in num)
+    {
+        print(" $i ");
+    }
+    println()
+}
+
 fun main()
 {
     var one:Int=square1(4)
@@ -25,6 +35,7 @@ fun main()
     
     showmeuser(con=true,age=17,"Pulkit") //this would not work as we cannnot use the positional argument , //👎⚔✂
     //once we have used the named arg  
+    variablearguements(1,2,3,4,5,5,6,6,1,19)
     
     
 }
