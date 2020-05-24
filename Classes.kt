@@ -11,6 +11,7 @@ class Account
     var accountname:String="Lavish"
     var accountmoney:Float=0.0f
     var accountnum:Int=19
+    //this basically accounts for the current object
     fun insert(accountname:String,amount:Float,accountnum:Int )
     {
         this.accountname=accountname
