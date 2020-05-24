@@ -19,6 +19,9 @@ class Student(var name:String)//primary constructor with the property
     }
 }
 
+✨✨✨👉👉👉👉 The init block is always called after the primary constructor👈👈👈👈✨✨✨
+
+⭐⭐A class file can have one or more init blocks executing in series. ⭐⭐✨
 //The primary constructor has not it's own body ,whereas the secondary constructor  has it's own body
 //but we can think the init block has the part of the body of the primary constructor.
 
