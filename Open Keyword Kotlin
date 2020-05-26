@@ -1,0 +1,30 @@
+We all know that Inheritance is the backbone of every Object-Oriented Programming language. It is a process
+of deriving or using the properties and characteristics of one class by the other. In simple words, if a 
+class named ClassA is having some variables and functions and another class named ClassB is inheriting 
+the ClassA, then, ClassB will use the variables and methods of ClassA. Here, ClassA is called the Parent
+Class and ClassB is called the Child Class. Inheritance enables re-usability.
+
+As you know that MindOrks has various online courses like Android for Professionals, Android for Beginners,
+and Data Structures & Algorithms. So, these are different courses but they share something. For enrolling 
+in any of the three courses, you have to first register yourself, then you have to pay for the course and 
+after completion of the course, your certificate will be generated. Now, think of the same situation in the
+Object-Oriented manner. Think of MindOrks as one class, AndroidPro(for the course named as “Android for Professionals”)
+as one class, AndroidBeg(for the course named as “Android for Beginners”) as one class, and DSAlgo(for the course named
+as “Data Structures & Algorithm”) as one class. Now, AndroidPro, AndroidBeg, and DSAlgo has three steps in common i.e. 
+courseReg(), feePay(), and certificateGeneration(). So, instead of implementing these three methods separately in all
+the three classes, we can implement these methods in the MindOrks class and then use the methods by inheriting the MindOrks class. 
+Here, MindOrks is the Parent class and AndroidPro, AndroidBeg, and DSAlgo are the Child class.
+
+
+⭐⭐✨✨👉👉All the classes,functions and all the variables are final by default in kotlin.✨
+
+🍀🍀🍀 ✨The “open” Keyword
+In Kotlin, all the classes are final by default i.e. they can’t be inherited by default.
+This is opposite to what we learned in Java. In Java, you have to make your class final explicitly.
+
+So, to make a class inheritable to the other classes, you must mark it with the open keyword 
+otherwise you will get an error saying “type is final so can’t be inherited”.🍀🍀🍀✨
+
+
+
+
