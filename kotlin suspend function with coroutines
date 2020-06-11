@@ -1,0 +1,36 @@
+package com.example.coroutines
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+
+class MainActivity : AppCompatActivity() {
+
+    val TAG="Main Activity"
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+       GlobalScope.launch {
+           val networkcallans1=donetworkcall()
+           val networkcallans2= donetworkcall2()
+           Log.d(TAG,"The coroutuine name is ${Thread.currentThread().name}")
+           Log.d(TAG,networkcallans1);
+           Log.d(TAG,networkcallans2)
+           }
+        }
+
+    suspend fun donetworkcall():String
+    {
+         delay(3000L)
+        return "This is the ans of the network call 1"
+    }
+
+    suspend fun donetworkcall2():String
+    {
+        delay(4000L)
+        return "This is the ans2"
+    }
+}
