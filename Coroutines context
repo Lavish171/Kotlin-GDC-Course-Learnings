@@ -1,0 +1,7 @@
+GlobalScope.launch(Dispatchers.IO) //any kind of the data operations
+GlobalScope.launch(Dispatchers.Main) //when we have to change the UI ,as we can only change the UI from the main thread.
+GlobalScope.launch(Dispatchers.Default) //when we have to perform large time consuming operation like we have to sort the list
+of the 10000 elements.
+
+//we cannot do a call to the suspend function from the main function,we can make the call to the suspend function from either
+//another suspend function or from the coroutines.
