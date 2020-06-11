@@ -14,10 +14,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
        GlobalScope.launch {
-           delay(3000L)
-            Log.d(TAG,"The coroutuine name is ${Thread.currentThread().name}")
+           delay(3000L)//this method is not equivalent to sleep function,by this method it pauses the current coroutine
+           //not the whole thread
+           
+           //if this delay takes longer ,ie if the main thread execution is over,then it cannot be executed
+            Log.d(TAG,"The coroutuine name is ${Thread.currentThread().name}")//this runs in a separate
         }
         Toast.makeText(applicationContext,"This is the toast msg",Toast.LENGTH_LONG).show()
-        Log.d(TAG,"The normal log outside the Global scope runs in Thread  ${Thread.currentThread().name}")
+        Log.d(TAG,"The normal log outside the Global scope runs in Thread  ${Thread.currentThread().name}")//this runs in the main thread
     }
 }
