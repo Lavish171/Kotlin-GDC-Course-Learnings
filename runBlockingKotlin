@@ -1,0 +1,13 @@
+                                            ✨✨👉runBlocking() function in kotlin✨✨👈
+
+👀👀✨run blocking will block the main thread and the delay function will not block the main thread.
+
+//when we use delay ,we can now also use UI,but when we runBlocking function ,we block the UI thread and will not be able to 
+//use UI operations or  UI updates.
+
+//runBlocking function is useful when we want to call the suspend function ,but do not want the coroutine behaviour.
+
+//if you have suspend function (like delay function) and want to call that from the main thread ,then u can use the runBlocking function.
+
+//whatever we write in the runBlocking() function will be in the sync with the main thread.
+
