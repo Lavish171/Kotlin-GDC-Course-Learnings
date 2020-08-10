@@ -1,0 +1,27 @@
+fun main()
+{
+   val car= Automobile("Car","Petrol",6,true)
+    var boy=Person("Ramesh",19)
+    println(boy.canvote)
+    println(car.safe)
+}
+
+class Automobile(val item:String,var type:String,val SeatingCapacity:Int,hasairbags:Boolean)
+{
+    val safe=hasairbags
+    fun drive()
+    {
+        println("Drive the $item")
+    }
+    fun breaks()
+    {
+        println("Apply  breaks")
+    }
+}
+
+class Person(nameparameter:String,ageparam:Int)
+{
+    val age:Int=ageparam
+    val name:String=nameparameter
+    val canvote:Boolean=if(ageparam>18)  true else false
+}
