@@ -1,0 +1,13 @@
+fun main()
+{
+    addition(3,8)
+    addition(b=12,a=14)
+    //order does not matter for the named arguements
+}
+
+fun addition(a:Int,b:Int)
+{
+    println("The value of a is $a")
+    println("The value of b is $b")
+    println("THe sum is ${a+b}")
+}
