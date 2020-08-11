@@ -1,0 +1,26 @@
+fun main()
+{
+    var p1=Person1("Shyam",22)
+    p1.age=23
+    p1.age=-18
+    println(p1.name)
+}
+
+class Person1(nameparam:String,ageparam:Int)
+{
+    var age=ageparam
+    set(value) {
+        if(value>0)
+        {
+            println("value is $value")
+        }
+        else
+        {
+            println("The age cannot be negative")
+        }
+    }
+    var name=nameparam
+        get() {
+            return field.toUpperCase()
+        }
+}
