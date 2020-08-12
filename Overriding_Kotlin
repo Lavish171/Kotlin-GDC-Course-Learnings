@@ -1,0 +1,30 @@
+fun main()
+{
+    val obj=OnePlus()
+    obj.display()
+    println(obj.size)
+    println(obj.toString())
+}
+
+open class Mobile()
+{
+    open val name:String=""  //as we have named them as open,it means they to can be overrided
+    open val size:Int=5
+    fun makecall()=println("Make a call")
+    open fun display()=println("Display of the simple phone")
+}
+
+class OnePlus:Mobile()
+{
+   override val name:String="One Plus"
+    override  val size:Int=6
+    override fun display() {
+        super.display() //if you want to call the parent functionality
+       println("One plus display")
+    }
+
+    override fun toString(): String {
+        return super.toString()
+        // or you can like this also return "$name -> $size"
+    }
+}
