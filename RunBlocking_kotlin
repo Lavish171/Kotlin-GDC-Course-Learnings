@@ -1,0 +1,26 @@
+package com.example.coroutines_reso_coder
+
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
+
+fun main()
+{
+exampleBlocking()
+}
+
+suspend fun printDelayed()
+{
+   delay(1000)
+    println("two")
+}
+
+ fun exampleBlocking()
+{
+   println("One")
+    //run blocking is almost same as the thread blocking.
+    //a suspend function can only be called from the another suspend function or the coroutine
+    runBlocking {
+        printDelayed()
+    }
+    println("Three")
+}
